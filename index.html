@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Techpoint</title>
+</head>
+<style>
+    body::before{
+        background: url(bg.jpg);
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    body {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background: black;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .left {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+
+    .left a {
+        color: white;
+        text-decoration: none;
+        line-height: 0px;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    .left img {
+        display: block;
+        margin: auto;
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid blue; */
+        width: 40%;
+        margin: auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        padding: 0px 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    .navbar li a:hover {
+        color: gray;
+        text-decoration: none;
+    }
+
+    .right {
+        position: absolute;
+        right: 24px;
+        top: 8px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .right i {
+        margin-left: 10px;
+
+    }
+
+    .right a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        line-height: 5px;
+        font-size: 14px;
+    }
+
+    .right a:hover {
+        text-decoration: none;
+        color: gray;
+        display: block;
+        line-height: 5px;
+    }
+
+    .container {
+        width: 500px;
+        height: 460px;
+        border: 2px solid whitesmoke;
+        ;
+        margin: 0px 0px;
+        float: right;
+        border-radius: 10px;
+        margin: 118px 100px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group {
+        margin: 25px 0px;
+    }
+
+    .form-control {
+        width: 75%;
+        margin: auto;
+        display: block;
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    .form-button {
+        width: 75%;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+        padding: 6px;
+        background: black;
+        color: white;
+        border: 2px solid whitesmoke;
+    }
+
+    .form-button:hover {
+        width: 75%;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+        padding: 6px;
+        background: rgb(37, 37, 37);
+        color: white;
+        cursor: pointer;
+    }
+    .header-text{
+        display: inline-block;
+        width: 350px;
+        /* height: 200px; */
+        margin: 203px 104px
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="log.png" alt="">
+            <a href="#">Techpoint</a>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <i class="material-icons">mail</i>
+            <a href="#">Mail Us</a>
+        </div>
+        <div class="header-text">
+<h1>We Prioritize Your Needs.</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam sed necessitatibus libero, aliquid laborum alias eius voluptates</p>
+        </div>
+        <div class="container">
+            <h1>Get Best Quote</h1>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Mobile" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" class="form-control">
+                </div>
+
+                <button class="form-button">Submit</button>
+
+
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
